@@ -8,8 +8,8 @@ import routes from './routes';
 import './styles/styles.css'; //webpack can import css too!!!!
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
-const store = configureStore({courses:[{title:'butt'},{title: 'farts'}]});
-
+const store = configureStore();
+//{courses:[{title:'butt'},{title: 'farts'}]}
 render (
   <Provider store={store}>
     <Router history={browserHistory} routes={routes} />
